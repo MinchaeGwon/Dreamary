@@ -44,7 +44,7 @@ ROOT_URLCONF = 'dreamary.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['dreamary/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
