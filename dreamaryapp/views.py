@@ -1,12 +1,4 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Designer
+from django.shortcuts import render
 
 def home(request):
     return render(request, 'home.html')
-
-def introduce(request):
-    return render(request, 'introduce.html')
-
-def detail(request, designer_id):
-    designer = get_object_or_404(Designer, pk = designer_id)
-    return render(request, 'detail.html', {'designer' : designer})
